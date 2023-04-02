@@ -5,6 +5,7 @@ import styles from '@/styles/Home.module.css'
 
 //components
 import Card from "@mui/material/Card"
+import SideMenu from '@/components/SideMenu'
 
 export default function Home() {
   return (
@@ -24,9 +25,8 @@ export default function Home() {
         </nav>
 
         <main>
-          <div className={styles.sidemenu}>
-            <button>hello</button>
-            <button>test</button>
+          <div className={styles.main_container}>
+            <SideMenu />
           </div>
         </main>
       </body>
