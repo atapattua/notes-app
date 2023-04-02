@@ -6,8 +6,17 @@ import styles from '@/styles/Home.module.css'
 //components
 import Card from "@mui/material/Card"
 import SideMenu from '@/components/SideMenu'
+import Note from '@/components/Note'
 
 export default function Home() {
+  const notes: Array<Object> = [
+    {
+      title: "First note",
+      _id: 1,
+      data: "This is my first note"
+    }
+  ]
+
   return (
     <>
       <Head>
@@ -27,6 +36,7 @@ export default function Home() {
         <main>
           <div className={styles.main_container}>
             <SideMenu />
+            <Note />
           </div>
         </main>
       </body>

@@ -1,7 +1,10 @@
 import Card from '@mui/material/Card'
 import styles from '@/styles/Home.module.css'
-import CardHeader from '@mui/material/CardHeader';
+
 import AddIcon from '@mui/icons-material/Add';
+
+import CardHeader from '@mui/material/CardHeader';
+import NoteItem from './NoteItem';
 
 export default function SideMenu(){
 
@@ -16,7 +19,11 @@ export default function SideMenu(){
                 action={
                     <AddIcon onClick={handleAddNote}/>
                 }
+                sx={{position: "sticky"}}
             />
+            <div className={styles.notes_list_container}>
+                
+            </div>
         </Card>
     );
 }
