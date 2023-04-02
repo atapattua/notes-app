@@ -3,7 +3,8 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 
-const inter = Inter({ subsets: ['latin'] })
+//components
+import Card from "@mui/material/Card"
 
 export default function Home() {
   return (
@@ -17,10 +18,17 @@ export default function Home() {
         <nav>
           <ul className={styles.navbar}>
             <li>Home</li>
-            <li>Project Repo</li>
+            <a href="https://github.com/atapattua/notes-app" target="_blank"><li>Project Repo</li></a>
             <li className={styles.add_note}>Add Note</li>
           </ul>
         </nav>
+
+        <main>
+          <div className={styles.sidemenu}>
+            <button>hello</button>
+            <button>test</button>
+          </div>
+        </main>
       </body>
       
     </>

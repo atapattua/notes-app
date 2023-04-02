@@ -5,6 +5,11 @@
   list-style: none;
 }
 
+@keyframes navbar_button_hover {
+  0% {background-color: none;}
+  100% {background-color: darkgray;}
+}
+
 .navbar li{
   height: 30px;
   padding: 10px;
@@ -14,10 +19,23 @@
   font: darkgray;
 }
 
+.navbar a{
+  text-decoration: none;
+}
+
 .add_note{
-  align-items: flex-end;
+  align-self: flex-end;
 }
 
 .navbar li:hover{
-  background-color: darkgray;
+  animation-name: navbar_button_hover;
+  animation-duration: 0.2s;
+  animation-fill-mode: both;
+}
+
+.sidemenu{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
