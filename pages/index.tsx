@@ -23,6 +23,7 @@ export default function Home() {
         <title>Notes</title>
         <meta name="description" content="A note creating app" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" type="image/png" href="/public/notepad.png" />
       </Head>
       <body>
         <nav>
