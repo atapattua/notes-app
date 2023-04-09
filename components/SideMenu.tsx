@@ -22,7 +22,7 @@ export default function SideMenu(){
                 sx={{position: "sticky"}}
             />
             <div className={styles.notes_list_container}>
-                <NoteItem />
+                <NoteItem props={{title: "Test Title"}} />
             </div>
         </Card>
     );
